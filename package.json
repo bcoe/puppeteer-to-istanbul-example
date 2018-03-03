@@ -1,0 +1,28 @@
+{
+  "name": "puppeteer-to-istanbul-example",
+  "version": "1.0.0",
+  "description": "example of using puppeteer-to-istanbul to output istanbul reports from puppeteer coverage",
+  "main": "index.js",
+  "scripts": {
+    "precoverage": "rimraf coverage && rimraf .nyc_output",
+    "coverage": "node index.js",
+    "postcoverage": "nyc report --reporter=html && open coverage/index.html",
+    "test": "standard"
+  },
+  "keywords": [
+    "puppeteer",
+    "istanbul",
+    "reports",
+    "coverage"
+  ],
+  "author": "Ben Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.1.1",
+    "puppeteer-to-istanbul": "^1.2.2",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "standard": "^11.0.0"
+  }
+}
