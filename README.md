@@ -10,11 +10,16 @@ to output puppeteer format coverage output in Istanbul format.
 
 ## Usage
 
-`npm run coverage`
+```
+npm install
+npm install -g nyc
+npm run coverage
+```
 
 This will:
 
-1. run JavaScript in puppeteer with coverage enabled.
-2. output to disk in Istanbul format.
-3. run reports with [nyc](https://github.com/istanbuljs/nyc).
-4. open `coverage/index.html`, displaying the coverage information collected.
+1. Install necessary prerequisites.
+2. Run JavaScript in puppeteer with coverage enabled.
+3. Output to disk in Istanbul format.
+4. Run reports with [nyc](https://github.com/istanbuljs/nyc).
+5. Open `coverage/index.html`, displaying the coverage information collected.
